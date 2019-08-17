@@ -176,10 +176,11 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements I
         mLiveDisplay.setOnPreferenceChangeListener(this);
 
         mDisplayTemperature = (DisplayTemperature) findPreference(KEY_LIVE_DISPLAY_TEMPERATURE);
-        if (ColorDisplayController.isAvailable(getContext())) {
+/*        if (ColorDisplayController.isAvailable(getContext())) {
             liveDisplayPrefs.removePreference(mLiveDisplay);
             liveDisplayPrefs.removePreference(mDisplayTemperature);
         }
+*/
 
         mColorProfile = (ListPreference) findPreference(KEY_LIVE_DISPLAY_COLOR_PROFILE);
         if (liveDisplayPrefs != null && mColorProfile != null
